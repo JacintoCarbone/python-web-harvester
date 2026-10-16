@@ -1,22 +1,22 @@
-# 🚀 Enterprise Web Harvester & Data Pipeline
+# Enterprise Web Harvester & Data Pipeline
 
 A resilient, production-ready Python web scraping and data pipeline engine. Designed with defensive crawling strategies, exponential backoff retries, rate-limiting compliance, and multi-format data exports (CSV & JSON).
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 - **Defensive HTTP Client**: Automatic retry logic with exponential backoff on `429 (Too Many Requests)` and `503 (Service Unavailable)`.
 - **Anti-Bot & Rate-Limit Friendly**: Built-in request delays, random jitter, and user-agent rotation.
-- **Defensive Parsing**: Resilient CSS/regex selectors handling missing fields and bad HTML gracefully.
+- **Defensive Parsing**: Resilient CSS/regex selectors handling missing fields and malformed HTML gracefully.
 - **Multi-Format Export**: Generates both clean **JSON** and **Excel-optimized CSV** (`utf-8-sig`).
 - **Data Analytics Summary**: Instant console metric breakdown (total records, availability %, price averages, rating distribution).
 
 ---
 
-## 🛠️ Architecture
+## Architecture
 
-```
+```text
 01_python_automation/
 ├── harvester/
 │   ├── __init__.py
@@ -29,7 +29,7 @@ A resilient, production-ready Python web scraping and data pipeline engine. Desi
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 ```bash
@@ -55,7 +55,7 @@ python main.py --pages 5 --delay 1.5 --format csv
 
 ---
 
-## 💼 Business Use Cases for Clients
+## Business Use Cases
 - **E-commerce Monitoring**: Track competitor prices, out-of-stock items, and rating fluctuations.
 - **Lead Generation**: Harvest directories, listings, and public contact information.
 - **Market Research**: Aggregate market catalogs into structured spreadsheets ready for BI tools.
